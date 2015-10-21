@@ -13,7 +13,7 @@
 				<div class="container-fluid">
 					<div class="navbar-header">
 						<a class="navbar-brand" href="/produtos">
-							Estoque
+							Controle de Estoque
 						</a>
 					</div>
 					<ul class="nav navbar-nav navbar-left">
