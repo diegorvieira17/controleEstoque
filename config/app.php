@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => 'http://estoquectrl.herokuapp.com/',
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY', 'SomeRandomString'),
+    'key' => env('APP_KEY', 'Ee5hWmDMPBBufbV0Cq9SRFUbOBQfOAFx'),
 
     'cipher' => 'AES-256-CBC',
 
