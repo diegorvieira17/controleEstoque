@@ -16,6 +16,15 @@ class ProdutoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function __construct()
+    {
+        // $this->middleware('autorizacao');  // todos os métodos passarão pela middleware
+        // $this->middleware('autorizacao',['only' => ['adiciona', 'remove']]);  // somente os métodos adiciona e remove passarão pela middleware
+        // $this->middleware('autorizacao',['except' => ['lista']]);  // todos os métodos passarão pela middleware exceto o listar
+        $this->middleware('auth',['except' => ['lista']]);  // usando o middleware de autenticação padrão do laravel
+    }
+
     public function lista()
     {
         $produtos = Produto::all();
